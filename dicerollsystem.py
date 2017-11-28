@@ -1,17 +1,18 @@
 import random
 import time
-mod = input("What is your modifier for this roll?: ")
 
+def roll():
+  mod = input("What is your modifier for this roll?: ")
+  random_roll = (random.randint(1,20))
+  sum = int(mod) + int(random_roll)
+  print("Your true roll is:")
+  time.sleep(0.5)
+  print(random_roll)
+  time.sleep(1)
+  print("Your complete roll is:")
+  time.sleep(0.5)
+  print(sum)
 
-roll = (random.randint(1,20))
-sum = int(mod) + int(roll)
-print ("Your true roll is:")
-time.sleep(0.5)
-print (roll)
-time.sleep(2)
-print ("Your complete roll is:")
-time.sleep(0.5)
-print (sum)
-time.sleep(3)
+  roll()
 
 roll()
